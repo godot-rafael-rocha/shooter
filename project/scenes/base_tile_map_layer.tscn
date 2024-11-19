@@ -1,0 +1,105 @@
+[gd_scene load_steps=10 format=3 uid="uid://n5uxt6mqll0l"]
+
+[ext_resource type="Texture2D" uid="uid://bxsbe24c6po4n" path="res://graphics/tilesets/ceiling.png" id="1_qk2lv"]
+[ext_resource type="Texture2D" uid="uid://cwgp5smai0ure" path="res://graphics/tilesets/interior.png" id="2_lulny"]
+[ext_resource type="Texture2D" uid="uid://k62bx76cy7kd" path="res://graphics/tilesets/outside_walls.png" id="3_ylh23"]
+[ext_resource type="Texture2D" uid="uid://bv7yrx64cqhnm" path="res://graphics/tilesets/soil.png" id="4_b0by1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2fc3"]
+texture = ExtResource("1_qk2lv")
+texture_region_size = Vector2i(390, 390)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p1mi1"]
+texture = ExtResource("2_lulny")
+texture_region_size = Vector2i(390, 390)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+6:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+6:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+3:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+6:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+5:8/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qp4ep"]
+texture = ExtResource("3_ylh23")
+texture_region_size = Vector2i(390, 390)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjwmt"]
+texture = ExtResource("4_b0by1")
+texture_region_size = Vector2i(390, 390)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gsf0e"]
+tile_size = Vector2i(390, 390)
+sources/4 = SubResource("TileSetAtlasSource_j2fc3")
+sources/5 = SubResource("TileSetAtlasSource_p1mi1")
+sources/6 = SubResource("TileSetAtlasSource_qp4ep")
+sources/7 = SubResource("TileSetAtlasSource_bjwmt")
+
+[node name="BaseTileMapLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_gsf0e")
